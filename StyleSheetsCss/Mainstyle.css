@@ -1,0 +1,356 @@
+.body
+{
+    /*background-image:url(../Images/5120x2160.jpg);*/
+    margin: 0%;
+    
+    height: 100%;
+}
+
+.logo{
+    width: 20%;
+    
+    float: left;
+    background-color: #6f6f6f;
+    color: #000000;
+    border-style: outset;
+    border-radius: round;
+    border-width: thin;
+}
+
+.header{
+    opacity: 0.7;
+    width: 100%;
+    float: left;
+    background-color: #030303;
+    color: #ffffff;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 42px;
+    text-indent: 15%;
+    border-style: inset;
+    border-radius: round;
+    border-width: thin;
+
+}
+
+.header:hover{
+
+opacity:1;
+}
+
+.maincontent{
+    
+        
+        width:70%;
+        background-color: #6f6f6f;
+        float: left;
+       
+    
+    }
+
+.maincontentpicture{
+    display:block;
+    margin: 0 auto;
+    opacity: 0.9;
+    width:100%;
+    background-color: #000000;
+    float: left;
+    border-style: solid;
+    border-width: thin;
+
+}
+.maincontentpicture:hover{
+  opacity: 1;
+}
+
+.maincontenttext{
+  opacity: 0.9;
+    width: 100%;
+    background-color: #000000;
+    float:left;
+    color: #ffffff;
+    border-style: solid;
+    border-width: thin;
+
+}
+
+.maincontenttext:hover{
+  opacity: 1;
+}
+
+.footer{
+    opacity: 0.7;
+    display:inline-block;
+    width: 100%;
+    background-color: rgb(0, 0, 0);
+    color: #ffffff;
+    float: none;
+    border-style: solid;
+    border-width: thin;
+}
+.footer:hover{
+  opacity: 1;
+}
+
+#navbar{
+
+    
+    display:block;
+    float: left;
+}
+
+#navbar:hover{
+  opacity: 1;
+}
+
+.head{
+    display:inline-block;
+    width: 100%;
+    background-color: rgb(0, 0, 0);
+}
+#sidebar{
+
+    opacity: 0.8;
+    background-color: #000000;
+    float:left;
+    border-style: groove;
+    border-width: thin;
+
+}
+#sidebar:hover{
+  opacity: 1;
+}
+
+/*Navigation Menu*/
+
+*, *:after, *:before {
+    box-sizing: border-box;
+  }
+  
+  .animenu__toggle {
+    display: none;
+    cursor: pointer;
+    background-color: #111;
+    border: 0;
+    padding: 10px;
+    height: 40px;
+    width: 40px;
+  }
+  .animenu__toggle:hover {
+    background-color: #0186ba;
+  }
+  
+  .animenu__toggle__bar {
+    display: block;
+    width: 20px;
+    height: 2px;
+    background-color: #fff;
+    transition: 0.15s cubic-bezier(0.75, -0.55, 0.25, 1.55);
+  }
+  .animenu__toggle__bar + .animenu__toggle__bar {
+    margin-top: 4px;
+  }
+  
+  .animenu__toggle--active .animenu__toggle__bar {
+    margin: 0;
+    position: absolute;
+  }
+  .animenu__toggle--active .animenu__toggle__bar:nth-child(1) {
+    transform: rotate(45deg);
+  }
+  .animenu__toggle--active .animenu__toggle__bar:nth-child(2) {
+    opacity: 0;
+  }
+  .animenu__toggle--active .animenu__toggle__bar:nth-child(3) {
+    transform: rotate(-45deg);
+  }
+  
+  .animenu {
+    display: block;
+  }
+  .animenu ul {
+    padding: 0;
+    list-style: none;
+    font: 0px 'Open Sans', Arial, Helvetica;
+  }
+  .animenu li, .animenu a {
+    display: inline-block;
+    font-size: 15px;
+  }
+  .animenu a {
+    color: #aaaaaa;
+    text-decoration: none;
+  }
+  
+  .animenu__nav {
+    background-color: #111;
+  }
+  .animenu__nav > li {
+    position: relative;
+    border-right: 1px solid #444444;
+  }
+  .animenu__nav > li > a {
+    padding: 10px 30px;
+    text-transform: uppercase;
+  }
+  .animenu__nav > li > a:first-child:nth-last-child(2):before {
+    content: "";
+    position: absolute;
+    border: 4px solid transparent;
+    border-bottom: 0;
+    border-top-color: currentColor;
+    top: 50%;
+    margin-top: -2px;
+    right: 10px;
+  }
+  .animenu__nav > li:hover > ul {
+    opacity: 1;
+    visibility: visible;
+    margin: 0;
+  }
+  .animenu__nav > li:hover > a {
+    color: #fff;
+  }
+  
+  .animenu__nav__child {
+    min-width: 100%;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 1;
+    opacity: 0;
+    visibility: hidden;
+    margin: 20px 0 0 0;
+    background-color: #373737;
+    transition: margin .15s, opacity .15s;
+  }
+  .animenu__nav__child > li {
+    width: 100%;
+    border-bottom: 1px solid #515151;
+  }
+  .animenu__nav__child > li:first-child > a:after {
+    content: '';
+    position: absolute;
+    height: 0;
+    width: 0;
+    left: 1em;
+    top: -6px;
+    border: 6px solid transparent;
+    border-top: 0;
+    border-bottom-color: inherit;
+  }
+  .animenu__nav__child > li:last-child {
+    border: 0;
+  }
+  .animenu__nav__child a {
+    padding: 10px;
+    width: 100%;
+    border-color: #373737;
+  }
+  .animenu__nav__child a:hover {
+    background-color: #0186ba;
+    border-color: #0186ba;
+    color: #fff;
+  }
+  
+  @media screen and (max-width: 767px) {
+    .animenu__toggle {
+      display: inline-block;
+    }
+  
+    .animenu__nav,
+    .animenu__nav__child {
+      display: none;
+    }
+  
+    .animenu__nav {
+      margin: 10px 0;
+    }
+    .animenu__nav > li {
+      width: 100%;
+      border-right: 0;
+      border-bottom: 1px solid #515151;
+    }
+    .animenu__nav > li:last-child {
+      border: 0;
+    }
+    .animenu__nav > li:first-child > a:after {
+      content: '';
+      position: absolute;
+      height: 0;
+      width: 0;
+      left: 1em;
+      top: -6px;
+      border: 6px solid transparent;
+      border-top: 0;
+      border-bottom-color: inherit;
+    }
+    .animenu__nav > li > a {
+      width: 100%;
+      padding: 10px;
+      border-color: #111;
+      position: relative;
+    }
+    .animenu__nav a:hover {
+      background-color: #0186ba;
+      border-color: #0186ba;
+      color: #fff;
+    }
+  
+    .animenu__nav__child {
+      position: static;
+      background-color: #373737;
+      margin: 0;
+      transition: none;
+      visibility: visible;
+      opacity: 1;
+    }
+    .animenu__nav__child > li:first-child > a:after {
+      content: none;
+    }
+    .animenu__nav__child a {
+      padding-left: 20px;
+      width: 100%;
+    }
+  }
+  .animenu__nav--open {
+    display: block !important;
+  }
+  .animenu__nav--open .animenu__nav__child {
+    display: block;
+  }
+
+  /*----------------------Calendar---------------------*/
+
+
+.main {
+    opacity:1; 
+    border-style:groove;
+    width:200px;
+    border:1px solid black;
+    }
+    
+    .month {
+    background-color:rgba(0, 0, 0, 0.685);
+    font:bold 12px verdana;
+    color:white;
+    }
+    
+    .daysofweek {
+    background-color:rgb(10, 10, 10);
+    font:bold 12px verdana;
+    color:white;
+    }
+    
+    .days {
+    font-size: 12px;
+    font-family:verdana;
+    color:rgb(255, 255, 255);
+    background-color: rgb(54, 54, 54);
+    padding: 2px;
+    }
+    
+    .days #today{
+    font-weight: bold;
+    font-size: 20;
+    color: rgba(255, 0, 0, 0.582);
+    }

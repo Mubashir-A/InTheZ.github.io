@@ -1,0 +1,234 @@
+<html>
+    <head>
+        <style>
+            body {
+               
+                background-image: url(Images/background4.png);
+            }
+            </style>
+    <!--Nav Menu-->
+    <link href = "cssmenu/styles.css" type = "text/css" rel="stylesheet"/>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="styles.css">
+    <script src="http://code.jquery.com/jquery-latest.min.js" type="text/javascript"></script>
+    <script src="script.js"></script>
+    <script src ="Scripts/style.js" type="text/javascript"></script>
+    <!--nav menu end-->
+        <link rel="stylesheet" href="StyleSheetsCss/Mainstyle.css" type="text/css">
+        
+        <meta name = "viewport" content="width=device-width, initial-scale=1">
+        <!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css"> 
+    <!--Calendar-->
+
+    <script src="StylesheetsJs/basiccalendar.js" type = "text/javascript"></script>
+    
+            <link rel="stylesheet" type="text/css" href="StylesheetsCss/expandticker.css" />
+            
+            <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js"></script>
+            
+            
+            
+            
+            <script type="text/javascript">
+            
+            expandticker.init({
+                id: 'expandticker1',
+                snippetlength: 25,
+                fx: 'slide',
+                timers: {rotatepause:3000, fxduration:500} //--No comma following last option!
+            })
+            
+            </script>
+
+    <!--End Calendar-->        
+    <script src="https://www.w3schools.com/lib/w3.js"></script>
+     
+    
+    </head>
+    <body>
+        <div id="pagewrapper" class="body"> <!--contains the page-->
+            
+            
+            <div id="head" class = "col-sm-12-fluid"> <!--header of the page with logo and title-->
+                
+                <div id="header" class="header" >
+                        <img src="Images/Logo.fw.png" alt="Logo" style="display:inline-flex; margin: 0 auto; float: left;">
+                        <br>
+                        <h1>Help Page</h1>
+
+                </div>
+        </div>
+
+       
+        <!--interactive navigation menu-->
+        <div id="navbar" style="float:left; background-color: #353535; opacity:0.7; border-style:groove;" class="col-sm-2">
+                
+                <div id='cssmenu' style="opacity:1; border-style:groove;" >
+                    
+					<ul>
+                        
+                        <li><a href = "Homepage.html">Home</a> </li>
+                        <li><a href='Products.html'><span>Products</span></a> </li>
+                        <li><a href='AboutUs.html'><span>About Us</span></a></li>
+                        <li><a href='ContactUs.html'><span>Contact Us</span></a></li>
+                        <li><a href="Help.html"><span>Help Page</span></a></li>
+                        <li class='last'><a href='Report.html'><span>Report</span></a></li>
+					</ul>
+					</div>
+
+            </div>
+            <div id="maincontent" class="col-sm-8" style="float:left">
+                
+                
+
+                <div id="maincontentpicture" class="maincontentpicture" style="color:#ffffff;"> <!--top main content-->
+                        
+                        Where is my order?<br>
+                        The value of your order will depend on how your order was sent and if tracking is available.
+                        <br><br>
+                        Orders under £75
+                        <br><br>
+                        If your order has been shipped using Royal Mail untracked service, please allow 5 working days (not including Sundays, National and Bank Holidays) from dispatch as some orders may take a little longer to deliver, if you have waited 5 working days and you still don't have your order, please contact us.
+                        
+                        For International orders, please allow 21 days for delivery, if you have not received it after this time please contact us.
+                        
+                        Please note: For pre-orders please allow 5 working days from release date.
+                        
+                        <br><br>
+                        
+                        Orders £75 and over
+                        <br>
+                        For orders shipped via our tracked services, you can use the tracking link in your shipping email or the link below that applies to track your order.
+                         <br>
+                        Orders £75-£149.99 - Hermes
+                         <br>
+                        Orders over £150, or with upgraded delivery - DPD
+                        <br><br>
+                         
+                        
+                        In the unlikely event that your order has been lost in transit, we will do our best to replace it as soon as possible (subject to product availability). Please be aware that you must contact us within 60 days of the despatch date of your order if it hasn’t arrived via the postal service. Unfortunately, claims for lost in transit orders after this time cannot be accepted.
+                        <br><br><br>
+
+                        How do I spend my gift card online?<br>
+                        You can use your gift card for full or part payment of any products (except pre-orders) on our website. The total will be taken from the balance on your gift card when you place your order.
+                        <br><br>
+                        To spend your Gift Card online;
+                        <br><br>
+                        Add item(s) to basket <br>
+                        Proceed to Checkout <br>
+                        In the discounts section select ‘Redeem A Voucher’,
+                        Enter the 19-digit number gift card number on the rear of the card and 4-digit PIN from your gift card (found under the scratch-off foil panel)
+                        click Apply and continue the checkout process.
+                        
+                </div>
+                <div id="maincontenttext" class="maincontenttext"> <!--form for asking help from InTheZone-->
+                        <form method="POST" action="mailto:BMC151639047@bmet.ac.uk"> <!--email to this mail-->
+                            <table style="color:#ffffff;"> <!--the background is black so font has to be different-->
+                                <tr>
+                                    <td>
+                                        Name: 
+                                    </td>
+                                    <td>
+                                        <input type="text" name="username"> <!--username field-->
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td>
+                                        Email: 
+                                    </td>
+                                    <td>
+                                        <input type="text" name="email">
+                                    </td>
+                                    <br><br><br>
+                                    <td>
+                                        Question:
+                                        <textarea name="question"  wrap="hard" rows="10"></textarea> <!--bigger box for questions-->
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td>
+
+                                    </td>
+                                    <td align="right">
+                                        <input type="submit" value="send"> <!--send the form-->
+                                        <input type="reset" value="clear" > <!--clear the form-->
+                                    </td>
+                                </tr>
+
+                                
+                            </table>
+                            
+
+                        </form>
+                </div>
+            </div>
+            <div id="sidebar" class = "col-sm-2" style="color:#ffffff"> <!--sidebar on the right-->
+
+                <script type="text/javascript">
+					
+					var todaydate=new Date();
+					var curmonth=todaydate.getMonth()+1; //get current month (1-12)
+					var curyear=todaydate.getFullYear(); //get current year
+					
+					document.write(buildCal(curmonth ,curyear, "main", "month", "daysofweek", "days", 1)); //create the calendar
+                    //write opening time for current day
+                    if(todaydate.getDay() == 6)
+                    {
+                        document.writeln("Today is Saturady!")
+                        document.writeln("The shop is open today from 11AM-5PM")
+                    }
+                    else if(todaydate.getDay() == 0)
+                    {
+                        document.writeln("Today is Sunday!")
+                        document.writeln("The shop is open today from 12AM-4PM")
+                    }
+                    else if(todaydate.getDay() == 1)
+                    {
+                        document.writeln("Today is Monday!")
+                        document.writeln("The shop is open today from 11AM-9PM")
+                    }
+                    else if(todaydate.getDay() == 2)
+                    {
+                        document.writeln("Today is Tuesday!")
+                        document.writeln("The shop is open today from 11AM-9PM")
+                    }
+                    else if(todaydate.getDay() == 3)
+                    {
+                        document.writeln("Today is Wednesday!")
+                        document.writeln("The shop is open today from 11AM-8PM")
+                    }
+                    else if(todaydate.getDay() == 4)
+                    {
+                        document.writeln("Today is Thursday!")
+                        document.writeln("The shop is open today from 11AM-9PM")
+                    }
+                    else if(todaydate.getDay() == 5)
+                    {
+                        document.writeln("Today is Friday!")
+                        document.writeln("The shop is open today from 11AM-9PM")
+                    }
+                    
+                    
+					</script>
+            </div>
+            
+        </div>
+        <div id="footer" class="footer"> <!--copyrights in the footer-->
+            All rights for this site belong to ©InTheZone
+            <br>By Mubashar Azam  
+            </div>
+
+         <!--Bootstrap-->
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <!-- Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.6/umd/popper.min.js"></script>
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js"></script>
+    </body>
+</html>
